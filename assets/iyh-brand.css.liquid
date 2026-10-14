@@ -37,19 +37,20 @@ input, textarea, select, .product-description, .text-block-9, .text-block-18 {
 }
 
 /* Headings and shopping controls */
-h1, h2, h3, h4, h5, h6,
-.product-title, .prouduct-title, .nav-link, .menu-link, .btn, .w-button,
+/* Buttons, nav and prices share the heading tracking */
+h1, h2, h3, h4, h5, h6, .heading-4,
+.product-title, .prouduct-title, .nav-link, .nav-link.shop, .menu-link, .btn, .w-button,
 .add_btn_font, .add_header_font, .checkout-button-2, .text-block-16,
 .w-commerce-commercecartheading, .w-commerce-commercecheckoutplaceorderbutton,
-.w-commerce-commerceaddtocartbutton, input[type="submit"] {
+.w-commerce-commerceaddtocartbutton, .add-to-cart-button, input[type="submit"] {
   font-family: var(--iyh-heading-font);
   font-weight: 500;
   font-synthesis: none;
+  letter-spacing: -0.015em;
 }
-h1, h2, h3, h4, h5, h6 { letter-spacing: -0.015em; }
 
-/* Labels: clock, credits, announcement bar */
-.date, .time, .credits, .announcement-bar, .iyh-label {
+/* Labels: clock, credits, announcement bar (.text-block) */
+.date, .time, .time.invert, .credits, .text-block, .iyh-label {
   font-family: var(--iyh-body-font);
   font-weight: 400;
   font-size: 11px;
