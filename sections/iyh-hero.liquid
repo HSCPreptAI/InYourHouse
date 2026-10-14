@@ -1,0 +1,40 @@
+{%- comment -%}
+  IYH hero: full-bleed campaign image with issue number, line and square button.
+{%- endcomment -%}
+<section class="iyh-hero" style="--iyh-hero-h: {{ section.settings.height }}svh; --iyh-hero-shade: {{ section.settings.shade | divided_by: 100.0 }};">
+  <picture class="iyh-hero__media">
+    {%- if section.settings.mobile_image != blank -%}
+      <source media="(max-width: 767px)" srcset="{{ section.settings.mobile_image | image_url: width: 1200 }}">
+    {%- endif -%}
+    {%- if section.settings.image != blank -%}
+      <img src="{{ section.settings.image | image_url: width: 2400 }}" alt="{{ section.settings.image.alt | default: section.settings.heading | escape }}" width="2400" height="1200">
+    {%- endif -%}
+  </picture>
+  <div class="iyh-hero__top">
+    <span class="iyh-label">{{ section.settings.eyebrow }}</span>
+  </div>
+  <div class="iyh-hero__content">
+    <h1 class="iyh-hero__heading">{{ section.settings.heading }}</h1>
+    {%- if section.settings.text != blank -%}<p class="iyh-hero__text">{{ section.settings.text }}</p>{%- endif -%}
+    {%- if section.settings.button_label != blank -%}
+      <a class="iyh-button iyh-button--light" href="{{ section.settings.button_link | default: routes.all_products_collection_url }}">{{ section.settings.button_label }}</a>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "IYH hero",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "image_picker", "id": "mobile_image", "label": "Mobile image", "info": "Optional. Portrait crops work best." },
+    { "type": "text", "id": "eyebrow", "label": "Small label", "default": "ISSUE 001" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "001" },
+    { "type": "text", "id": "text", "label": "Line", "default": "In Your House." },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "SHOP NOW" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "range", "id": "height", "label": "Height", "min": 50, "max": 100, "step": 5, "unit": "%", "default": 80 },
+    { "type": "range", "id": "shade", "label": "Image shade", "min": 0, "max": 60, "step": 5, "unit": "%", "default": 15 }
+  ]
+}
+{% endschema %}

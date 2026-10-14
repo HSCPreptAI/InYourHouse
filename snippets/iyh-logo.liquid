@@ -1,6 +1,5 @@
 {%- comment -%}
-  IYH logo: desktop IYH monogram + mobile logo (shown at 479px and below).
-  Mobile falls back to the in your house! wordmark when no mobile logo is set.
+  IYH logo: in your house! wordmark on desktop, IYH monogram on mobile (767px and below).
   Usage: {% render 'iyh-logo', kind: 'enter' %} on the homepage, 'shop' everywhere else.
 {%- endcomment -%}
 {%- liquid
@@ -16,9 +15,9 @@
 -%}
 <picture>
   {%- if mobile_logo != blank -%}
-    <source media="(max-width: 479px)" srcset="{{ mobile_logo | image_url: width: 600 }}">
+    <source media="(max-width: 767px)" srcset="{{ mobile_logo | image_url: width: 300 }}">
   {%- else -%}
-    <source media="(max-width: 479px)" srcset="{{ 'iyh-logo-black.png' | asset_url }}">
+    <source media="(max-width: 767px)" srcset="{{ 'iyh-monogram-black.png' | asset_url }}">
   {%- endif -%}
   <img
     src="{% if logo != blank %}{{ logo | image_url: width: 1200 }}{% else %}{{ 'Supreme-dummy.png' | asset_url }}{% endif %}"

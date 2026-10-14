@@ -1,0 +1,54 @@
+{%- comment -%}
+  IYH header: wordmark on desktop, monogram on mobile, main menu, Sydney clock and cart.
+{%- endcomment -%}
+<header class="iyh-header{% if section.settings.overlay %} iyh-header--overlay{% endif %}">
+  <div class="iyh-header__inner">
+    <details class="iyh-header__menu">
+      <summary class="iyh-header__menu-toggle">Menu</summary>
+      <nav class="iyh-header__drawer" aria-label="Main menu">
+        {%- for link in section.settings.menu.links -%}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {%- endfor -%}
+        {%- if section.settings.instagram != blank -%}<a href="{{ section.settings.instagram }}" target="_blank" rel="noopener">Instagram</a>{%- endif -%}
+      </nav>
+    </details>
+
+    <a href="{{ routes.root_url }}" class="iyh-header__logo" aria-label="{{ shop.name | escape }} home">
+      <picture>
+        <source media="(max-width: 767px)" srcset="{% if settings.mobile_logo != blank %}{{ settings.mobile_logo | image_url: width: 300 }}{% else %}{{ 'iyh-monogram-black.png' | asset_url }}{% endif %}">
+        <img
+          src="{% if settings.shop_screen_logo != blank %}{{ settings.shop_screen_logo | image_url: width: 600 }}{% else %}{{ 'iyh-logo-black.png' | asset_url }}{% endif %}"
+          alt="{{ shop.name | escape }}"
+          style="--iyh-header-logo-w: {{ section.settings.logo_width }}px; --iyh-header-logo-w-mobile: {{ section.settings.mobile_logo_width }}px;"
+          width="300" height="70">
+      </picture>
+    </a>
+
+    <nav class="iyh-header__nav" aria-label="Main menu">
+      {%- for link in section.settings.menu.links -%}
+        <a href="{{ link.url }}"{% if link.active %} aria-current="page"{% endif %}>{{ link.title }}</a>
+      {%- endfor -%}
+    </nav>
+
+    <div class="iyh-header__meta">
+      {%- if section.settings.show_clock -%}
+        <span class="iyh-label iyh-header__clock"><span class="date"></span> <span class="time"></span></span>
+      {%- endif -%}
+      <a href="{{ routes.cart_url }}" class="iyh-header__cart">Cart ({{ cart.item_count }})</a>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "IYH header",
+  "settings": [
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" },
+    { "type": "url", "id": "instagram", "label": "Instagram link" },
+    { "type": "range", "id": "logo_width", "label": "Desktop logo width", "min": 80, "max": 260, "step": 5, "unit": "px", "default": 150 },
+    { "type": "range", "id": "mobile_logo_width", "label": "Mobile logo width", "min": 24, "max": 80, "step": 2, "unit": "px", "default": 40 },
+    { "type": "checkbox", "id": "show_clock", "label": "Show Sydney clock", "default": true },
+    { "type": "checkbox", "id": "overlay", "label": "Sit on top of the hero image", "default": false }
+  ]
+}
+{% endschema %}

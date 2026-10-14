@@ -1,0 +1,24 @@
+{%- comment -%}
+  IYH footer: one quiet row of labels.
+{%- endcomment -%}
+<footer class="iyh-footer">
+  <span class="iyh-label">&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}</span>
+  <nav class="iyh-footer__links" aria-label="Footer">
+    {%- for link in section.settings.menu.links -%}
+      <a class="iyh-label" href="{{ link.url }}">{{ link.title }}</a>
+    {%- endfor -%}
+    {%- if section.settings.instagram != blank -%}<a class="iyh-label" href="{{ section.settings.instagram }}" target="_blank" rel="noopener">Instagram</a>{%- endif -%}
+  </nav>
+  <span class="iyh-label">{{ section.settings.note }}</span>
+</footer>
+
+{% schema %}
+{
+  "name": "IYH footer",
+  "settings": [
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" },
+    { "type": "url", "id": "instagram", "label": "Instagram link" },
+    { "type": "text", "id": "note", "label": "Note", "default": "Designed in Sydney" }
+  ]
+}
+{% endschema %}

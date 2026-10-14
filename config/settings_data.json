@@ -15,8 +15,8 @@
     "thumb_color": "#181818",
     "thumb_radius": 0,
     "scrollbar-distance": 10,
-    "enter_screen_logo_size": 180,
-    "shop_screen_logo_size": 80,
+    "enter_screen_logo_size": 200,
+    "shop_screen_logo_size": 150,
     "desktop-layout": "1fr 1fr 1fr 1fr",
     "mobile-layout": "1fr 1fr",
     "column-gap-desktop": 0,
@@ -445,12 +445,60 @@
           "submit-bg": "#000000",
           "submit-text-color": "#ffffff"
         }
+      },
+      "iyh-header": {
+        "type": "iyh-header",
+        "settings": {
+          "menu": "main-menu",
+          "instagram": "https://www.instagram.com/inyourhouse.co/",
+          "logo_width": 150,
+          "mobile_logo_width": 40,
+          "show_clock": true,
+          "overlay": false
+        }
+      },
+      "iyh-hero": {
+        "type": "iyh-hero",
+        "settings": {
+          "image": "shopify://shop_images/Copy_of_000099160006.jpg",
+          "eyebrow": "ISSUE 001 — TRIPOLI",
+          "heading": "001",
+          "text": "In Your House.",
+          "button_label": "SHOP NOW",
+          "button_link": "shopify://collections/issue-001",
+          "height": 80,
+          "shade": 15
+        }
+      },
+      "iyh-home-grid": {
+        "type": "iyh-home-grid",
+        "settings": {
+          "heading": "ISSUE 001",
+          "collection": "issue-001",
+          "limit": 6
+        }
+      },
+      "iyh-home-story": {
+        "type": "iyh-home-story",
+        "settings": {
+          "eyebrow": "RELEASE NOTES",
+          "heading": "DAYS BEFORE YOUR HOUSE: A HOUSE AWAY FROM HOME",
+          "text": "<p>A town, metonymically just an apple, admitted us in all of its strangeness into a house away from home for the printing of this edition.</p><p>The release documents a period of development and realisation spent with nocturnal friends soaring over and descending into time-resistant epoxy floors, before the frame returned home as our inaugural Tripoli glasses.</p><p>The relationship between the brow line, temple thickness and lens opening was agonisingly reimagined across successive iterations until the hunt for a body turned up the silhouette of a brand.</p><p>Each time the frame settled on curious temples, the hypothesis that these were really fucking good broke out like a rash.</p><p>Informal testing across multiple jurisdictions only made the evidence more persuasive.</p><p>So, we hope you enjoy the release half as much as we enjoyed making it for you, because we had a ball.</p><p>Only real housemates are gonna last.</p><p>All that other bullshit is here today and gone tomorrow.</p>"
+        }
+      },
+      "iyh-footer": {
+        "type": "iyh-footer",
+        "settings": {
+          "menu": "main-menu",
+          "instagram": "https://www.instagram.com/inyourhouse.co/",
+          "note": "Designed in Sydney"
+        }
       }
     },
     "content_for_index": [],
     "announement-text-color": "#ffffff",
     "font_header": "inter_n5",
     "track_color": "#ffffff",
-    "mobile_logo_size": 150
+    "mobile_logo_size": 44
   }
 }

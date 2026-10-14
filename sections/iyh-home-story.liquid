@@ -1,0 +1,19 @@
+{%- comment -%}
+  IYH story: the issue's release notes in a narrow reading column.
+{%- endcomment -%}
+<section class="iyh-story">
+  <span class="iyh-label">{{ section.settings.eyebrow }}</span>
+  <h2 class="iyh-story__heading">{{ section.settings.heading }}</h2>
+  <div class="iyh-story__body">{{ section.settings.text }}</div>
+</section>
+
+{% schema %}
+{
+  "name": "IYH story",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Small label", "default": "RELEASE NOTES" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "text", "label": "Text" }
+  ]
+}
+{% endschema %}

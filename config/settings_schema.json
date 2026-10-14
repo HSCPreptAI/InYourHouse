@@ -553,17 +553,17 @@
         "type": "image_picker",
         "id": "mobile_logo",
         "label": "Mobile logo",
-        "info": "Shown on screens 479px wide and below. Leave blank to use the desktop logo."
+        "info": "Shown on screens 767px wide and below. Leave blank to use the IYH monogram."
       },
       {
         "type": "range",
         "id": "mobile_logo_size",
         "label": "Mobile logo width",
-        "min": 40,
-        "max": 300,
-        "step": 5,
+        "min": 24,
+        "max": 200,
+        "step": 2,
         "unit": "px",
-        "default": 140
+        "default": 44
       }
     ]
   },
