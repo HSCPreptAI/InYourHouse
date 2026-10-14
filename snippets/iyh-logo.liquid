@@ -1,0 +1,26 @@
+{%- comment -%}
+  IYH logo: desktop wordmark + optional mobile logo (shown at 479px and below).
+  Usage: {% render 'iyh-logo', kind: 'enter' %} on the homepage, 'shop' everywhere else.
+{%- endcomment -%}
+{%- liquid
+  if kind == 'enter'
+    assign logo = settings.enter_screen_logo
+    assign logo_size = settings.enter_screen_logo_size
+  else
+    assign logo = settings.shop_screen_logo
+    assign logo_size = settings.shop_screen_logo_size
+  endif
+  assign mobile_logo = settings.mobile_logo
+  assign mobile_size = settings.mobile_logo_size | default: logo_size
+-%}
+<picture>
+  {%- if mobile_logo != blank -%}
+    <source media="(max-width: 479px)" srcset="{{ mobile_logo | image_url: width: 600 }}">
+  {%- endif -%}
+  <img
+    src="{% if logo != blank %}{{ logo | image_url: width: 1200 }}{% else %}{{ 'Supreme-dummy.png' | asset_url }}{% endif %}"
+    alt="{{ shop.name | escape }}"
+    class="logo"
+    style="--iyh-logo-w: {{ logo_size }}px; --iyh-logo-w-mobile: {{ mobile_size }}px;"
+  >
+</picture>

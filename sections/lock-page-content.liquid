@@ -1,0 +1,68 @@
+<p style="color:{{ section.settings.color }}" class="paragraph-2">{{ section.settings.message }}</p>
+<label style="color:{{ section.settings.title-color }}" for="pass" class="field-label w-password-page">{{ 't4c641ebb' | t }}</label>
+<input style="background-color:{{ section.settings.input-bg }}; color:{{ section.settings.input-text-color }};" type="password" class="text-field-2 w-password-page w-input" autofocus="true" maxlength="256" name="password" data-name="field" placeholder="Enter your password" id="pass">
+<input style="background-color:{{ section.settings.submit-bg }}; color: {{ section.settings.submit-text-color }};" type="submit" value="Submit" data-wait="Please wait..." class="submit-button w-password-page w-button">
+
+{% schema %}
+{
+  "name": "Content",
+  "tag": "div",
+  "class": "password",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Message"
+    }, 
+    {
+      "type": "color",
+      "id": "title-color",
+      "label": "Password Title Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Message Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "textarea",
+      "id": "message",
+      "label": "Message",
+      "default": "We'll be back later"
+    },
+    {
+      "type": "header",
+      "content": "Password Field Colors"
+    },
+    {
+      "type": "color",
+      "id": "input-bg",
+      "label": "Input BG Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "input-text-color",
+      "label": "Input Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Button Colors"
+    },
+    {
+      "type": "color",
+      "id": "submit-bg",
+      "label": "Submit BG Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "submit-text-color",
+      "label": "Submit BG Color",
+      "default": "#ffffff"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,456 @@
+{
+  "current": {
+    "announcement_background_color": "#181818",
+    "announcement_text": "FREE SHIPPING AUSTRALIA-WIDE",
+    "show_announcement_bar": true,
+    "hide_announcemenet_bar_on_home": true,
+    "show_music": false,
+    "music_img": "",
+    "show_disk": false,
+    "music_url": "",
+    "music_btn_color": "#181818",
+    "body_font": "inter_n4",
+    "btn_font": "inter_n5",
+    "timezone": "Australia/Sydney",
+    "thumb_color": "#181818",
+    "thumb_radius": 0,
+    "scrollbar-distance": 10,
+    "enter_screen_logo_size": 260,
+    "shop_screen_logo_size": 180,
+    "desktop-layout": "1fr 1fr 1fr 1fr",
+    "mobile-layout": "1fr 1fr",
+    "column-gap-desktop": 0,
+    "row-gap-desktop": 24,
+    "product-size": 89,
+    "collection_shop": "issue-001",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {}
+      },
+      "homepage-background": {
+        "type": "homepage-background",
+        "settings": {
+          "show_background_image": false,
+          "show_background_image_mobile": false,
+          "video_url": "",
+          "show_background_video": false,
+          "bg_color": "#ffffff",
+          "bg_color_mobile": "#ffffff",
+          "overlay_top_color": "#ffffff",
+          "overlay_top_opacity": 0,
+          "overlay_bottom_color": "#565656",
+          "overlay_bottom_opacity": 0,
+          "overlay_top_color_mobile": "#000000",
+          "overlay_top_opacity_mobile": 0,
+          "overlay_bottom_color_mobile": "#000000",
+          "overlay_bottom_opacity_mobile": 0
+        }
+      },
+      "social-media-links": {
+        "type": "social-media-links",
+        "settings": {
+          "link-alignment": "left",
+          "invert_social_media_links": false,
+          "instagram_link": "https://www.instagram.com/inyourhouse.co/",
+          "twitter_link": "",
+          "facebook_link": "",
+          "youtube_channel_link": "",
+          "tik_tok_link": "",
+          "applemusic_link": "",
+          "spotify_link": "",
+          "tidal_link": "",
+          "soundcloud_link": "",
+          "tumblr_link": "",
+          "discord_link": "",
+          "show_instagram": true,
+          "show_twitter": false,
+          "show_facebook": false,
+          "show_youtube": false,
+          "show_tik_tok": false,
+          "show_tumblr": false,
+          "show_discord": false,
+          "show_applemusic": false,
+          "show_spotify": false,
+          "show_tidal": false,
+          "show_soundcloud": false
+        }
+      },
+      "credits": {
+        "type": "credits",
+        "settings": {
+          "credit_text_color": "#181818",
+          "show_credits": true
+        }
+      },
+      "product-page-background": {
+        "type": "product-page-background",
+        "settings": {
+          "show_background_image": false,
+          "show_background_image_mobile": false,
+          "bg_color": "#ffffff",
+          "bg_color_mobile": "#ffffff",
+          "overlay_top_color": "#000000",
+          "overlay_top_opacity": 0,
+          "overlay_bottom_color": "#000000",
+          "overlay_bottom_opacity": 0,
+          "overlay_top_color_mobile": "#000000",
+          "overlay_top_opacity_mobile": 0,
+          "overlay_bottom_color_mobile": "#000000",
+          "overlay_bottom_opacity_mobile": 0
+        }
+      },
+      "index-timezone": {
+        "type": "index-timezone",
+        "settings": {
+          "index_date_color": "#181818",
+          "index_time_color": "#181818"
+        }
+      },
+      "nav-link": {
+        "type": "nav-link",
+        "settings": {
+          "nav_link_color": "#181818",
+          "navlink_hover_color": "#ffffff",
+          "navlink_background_color": "#181818",
+          "link-alignment": "left"
+        }
+      },
+      "shop-background": {
+        "type": "shop-background",
+        "settings": {
+          "show_background_image": false,
+          "show_background_image_mobile": false,
+          "bg_color": "#ffffff",
+          "bg_color_mobile": "#ffffff",
+          "overlay_top_color": "#ffffff",
+          "overlay_top_opacity": 0,
+          "overlay_bottom_color": "#ffffff",
+          "overlay_bottom_opacity": 0,
+          "overlay_top_color_mobile": "#ff0000",
+          "overlay_top_opacity_mobile": 0,
+          "overlay_bottom_color_mobile": "#000000",
+          "overlay_bottom_opacity_mobile": 0
+        }
+      },
+      "shop-timezone": {
+        "type": "shop-timezone",
+        "settings": {
+          "index_date_color": "#181818",
+          "index_time_color": "#181818"
+        }
+      },
+      "cart": {
+        "type": "cart",
+        "settings": {
+          "cart_text_color": "#181818",
+          "cart_number_color": "#ffffff",
+          "cart_number_bg_color": "#181818"
+        }
+      },
+      "category-menu": {
+        "type": "category-menu",
+        "settings": {
+          "menu-link-color": "#181818",
+          "bg_color": "#ffffff",
+          "navlink_background_color": "#181818",
+          "navlink_hover_color": "#ffffff",
+          "close_button_color": "#181818",
+          "text-alignment": "center",
+          "font-size": 16,
+          "menu-spacing": 16
+        }
+      },
+      "default-timezone": {
+        "type": "default-timezone",
+        "settings": {
+          "index_date_color": "#181818",
+          "index_time_color": "#181818"
+        }
+      },
+      "lock-page-background": {
+        "type": "lock-page-background",
+        "settings": {
+          "show_background_image": false,
+          "show_background_image_mobile": false,
+          "bg_color": "#ffffff",
+          "bg_color_mobile": "#ffffff",
+          "overlay_top_color": "#000000",
+          "overlay_top_opacity": 0,
+          "overlay_bottom_color": "#000000",
+          "overlay_bottom_opacity": 0,
+          "overlay_top_color_mobile": "#000000",
+          "overlay_top_opacity_mobile": 0,
+          "overlay_bottom_color_mobile": "#000000",
+          "overlay_bottom_opacity_mobile": 0
+        }
+      },
+      "product-timezone": {
+        "type": "product-timezone",
+        "settings": {
+          "index_date_color": "#181818",
+          "index_time_color": "#181818"
+        }
+      },
+      "on-sale-product-page": {
+        "type": "on-sale-product-page",
+        "settings": {
+          "on_sale_bg_color": "#181818",
+          "on_sale_text_color": "#ffffff"
+        }
+      },
+      "product-typography": {
+        "type": "product-typography",
+        "settings": {
+          "product_title": "#181818",
+          "product_description": "#181818",
+          "product_price": "#181818",
+          "product_was_text": "#181818",
+          "product_before_price": "#8e8e8e"
+        }
+      },
+      "product-navigation": {
+        "type": "product-navigation",
+        "settings": {
+          "add_to_cart_bg": "#181818",
+          "add_to_cart_text": "#ffffff",
+          "keep_shopping_bg": "#ffffff",
+          "keep_shopping_text": "#181818",
+          "next_item_text": "#181818",
+          "out_of_stock_bg": "#e8e8e8",
+          "out_of_stock_text": "#181818"
+        }
+      },
+      "lookbook-background": {
+        "type": "lookbook-background",
+        "settings": {
+          "show_background_image": false,
+          "show_background_image_mobile": false,
+          "bg_color": "#ffffff",
+          "bg_color_mobile": "#ffffff",
+          "overlay_top_color": "#000000",
+          "overlay_top_opacity": 0,
+          "overlay_bottom_color": "#000000",
+          "overlay_bottom_opacity": 0,
+          "overlay_top_color_mobile": "#000000",
+          "overlay_top_opacity_mobile": 0,
+          "overlay_bottom_color_mobile": "#000000",
+          "overlay_bottom_opacity_mobile": 0
+        }
+      },
+      "lookbook-header": {
+        "type": "lookbook-header",
+        "settings": {
+          "lookbook_title": "ISSUE 001",
+          "title_color": "#181818",
+          "lookbook_description": "A house away from home. The development of Issue 001 and the Tripoli frame — built through iteration, travel and the search for a silhouette that could become the beginning of In Your House.",
+          "description_color": "#181818",
+          "shop_now_link": "shopify://collections/issue-001",
+          "shop_now_link_text": "Shop Issue 001",
+          "shop_now_button_color": "#181818",
+          "shop_now_text_color": "#ffffff",
+          "back_home_button_color": "#ffffff",
+          "back_home_text_color": "#181818",
+          "date_color": "#181818",
+          "time_color": "#181818"
+        }
+      },
+      "lookbook-content": {
+        "type": "lookbook-content",
+        "blocks": {
+          "11304357-5d2f-49c1-a0dd-767c2ee8ebdd": {
+            "type": "lookbook_photos",
+            "settings": {
+              "image": "shopify://shop_images/Copy_of_000099160006.jpg"
+            }
+          },
+          "7b04d7f6-bf33-43ab-9105-34e4bda6116d": {
+            "type": "lookbook_photos",
+            "settings": {
+              "image": "shopify://shop_images/CLASS_OF_ITS_OWN_IMG_6760_2_3f343212-1923-435f-8ada-9bbd16931d3a.jpg"
+            }
+          },
+          "39a0cf9d-025c-47b5-add7-1d29869721a7": {
+            "type": "lookbook_photos",
+            "settings": {
+              "image": "shopify://shop_images/IMG_6979_1_2a6bf9d0-9075-4724-991d-1fa4f8a8e3fa.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "11304357-5d2f-49c1-a0dd-767c2ee8ebdd",
+          "7b04d7f6-bf33-43ab-9105-34e4bda6116d",
+          "39a0cf9d-025c-47b5-add7-1d29869721a7"
+        ],
+        "settings": {
+          "lookbook-columns": "1fr 1fr 1fr",
+          "lookbook-columns-mobile": "1fr 1fr"
+        }
+      },
+      "about-background": {
+        "type": "about-background",
+        "settings": {
+          "show_background_image": false,
+          "show_background_image_mobile": false,
+          "bg_color": "#ffffff",
+          "overlay_top_color": "#000000",
+          "overlay_top_opacity": 0,
+          "overlay_bottom_color": "#000000",
+          "overlay_bottom_opacity": 0,
+          "overlay_top_color_mobile": "#000000",
+          "overlay_top_opacity_mobile": 0,
+          "overlay_bottom_color_mobile": "#000000",
+          "overlay_bottom_opacity_mobile": 0
+        }
+      },
+      "about-timezone": {
+        "type": "about-timezone",
+        "settings": {
+          "index_date_color": "#181818",
+          "index_time_color": "#181818"
+        }
+      },
+      "about-content": {
+        "type": "about-content",
+        "settings": {
+          "content": "",
+          "content_text_color": "#181818"
+        }
+      },
+      "about-home-btn": {
+        "type": "about-home-btn",
+        "settings": {
+          "bg-color": "#181818",
+          "text-color": "#ffffff"
+        }
+      },
+      "contact-background": {
+        "type": "contact-background",
+        "settings": {
+          "show_background_image": false,
+          "show_background_image_mobile": false,
+          "bg_color": "#ffffff",
+          "bg_color_mobile": "#ffffff",
+          "overlay_top_color": "#000000",
+          "overlay_top_opacity": 0,
+          "overlay_bottom_color": "#000000",
+          "overlay_bottom_opacity": 0,
+          "overlay_top_color_mobile": "#000000",
+          "overlay_top_opacity_mobile": 0,
+          "overlay_bottom_color_mobile": "#000000",
+          "overlay_bottom_opacity_mobile": 0
+        }
+      },
+      "contact-timezone": {
+        "type": "contact-timezone",
+        "settings": {
+          "index_date_color": "#181818",
+          "index_time_color": "#181818"
+        }
+      },
+      "category-menu-btn": {
+        "type": "category-menu-btn",
+        "settings": {
+          "bg-color": "#181818"
+        }
+      },
+      "on-sale-mark-up-collection-shop": {
+        "type": "on-sale-mark-up-collection-shop",
+        "settings": {
+          "on_sale_bg_color": "#181818",
+          "on_sale_text_color": "#ffffff"
+        }
+      },
+      "contact-form": {
+        "type": "contact-form",
+        "settings": {
+          "field-bg-color": "#ffffff",
+          "field-text-color": "#181818",
+          "submit-bg-color": "#181818",
+          "submit-text-color": "#ffffff",
+          "back-home-color": "#ffffff",
+          "back-home-text-color": "#181818"
+        }
+      },
+      "product-settings": {
+        "type": "product-settings",
+        "settings": {
+          "product_title_color": "#181818",
+          "product_title_size": 11,
+          "show-title": false,
+          "on_sale_bg_color": "#181818",
+          "on_sale_text_color": "#ffffff",
+          "on_sale_text_size": 12,
+          "show_on_sale": true,
+          "on_sale_size": 61,
+          "on_sale_size_mobile": 55,
+          "product_border_color": "#181818",
+          "product_border_thickness": 1
+        }
+      },
+      "category-menu-desktop": {
+        "type": "category-menu-desktop",
+        "settings": {
+          "menu-link-color": "#181818",
+          "navlink_background_color": "#181818",
+          "navlink_hover_color": "#ffffff",
+          "font-size": 11,
+          "menu-spacing": 0,
+          "text-alignment": "right"
+        }
+      },
+      "music-player": {
+        "type": "music-player",
+        "settings": {}
+      },
+      "contact-content": {
+        "type": "contact-content",
+        "settings": {
+          "contact-message": "Talk to us.",
+          "contact_text_color": "#181818"
+        }
+      },
+      "default-page-background": {
+        "type": "default-page-background",
+        "settings": {
+          "show_background_image": false,
+          "show_background_image_mobile": false,
+          "bg_color": "#ffffff",
+          "bg_color_mobile": "#ffffff",
+          "overlay_top_color": "#000000",
+          "overlay_top_opacity": 0,
+          "overlay_bottom_color": "#000000",
+          "overlay_bottom_opacity": 0,
+          "overlay_top_color_mobile": "#000000",
+          "overlay_top_opacity_mobile": 0,
+          "overlay_bottom_color_mobile": "#000000",
+          "overlay_bottom_opacity_mobile": 0
+        }
+      },
+      "default-home-btn": {
+        "type": "default-home-btn",
+        "settings": {
+          "bg-color": "#181818",
+          "text-color": "#ffffff"
+        }
+      },
+      "lock-page-content": {
+        "type": "lock-page-content",
+        "settings": {
+          "title-color": "#181818",
+          "color": "#181818",
+          "message": "BATCH_00 — OCTOBER 31 2026",
+          "input-bg": "#ffffff",
+          "input-text-color": "#000000",
+          "submit-bg": "#000000",
+          "submit-text-color": "#ffffff"
+        }
+      }
+    },
+    "content_for_index": [],
+    "announement-text-color": "#ffffff",
+    "font_header": "inter_n5",
+    "track_color": "#ffffff",
+    "mobile_logo_size": 150
+  }
+}

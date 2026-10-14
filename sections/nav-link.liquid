@@ -1,0 +1,68 @@
+<div class="pages-menu">
+          {%- for link in linklists["main-menu"].links -%}
+            {% if section.settings.link-alignment == "left" %}
+            <a href="{{ link.url }}" class="link-block w-inline-block">
+              <div class="nav-link left" style = "--navlink-hover-color: {{ section.settings.navlink_hover_color }}; --navlink-background-color: {{ section.settings.navlink_background_color }}; --nav-link-color: {{ section.settings.nav_link_color }};">
+                {{ link.title }}
+              </div>
+            </a>
+            {% elsif section.settings.link-alignment == "center" %}
+            <a href="{{ link.url }}" class="link-block w-inline-block">
+              <div class="nav-link center" style = "--navlink-hover-color: {{ section.settings.navlink_hover_color }}; --navlink-background-color: {{ section.settings.navlink_background_color }}; --nav-link-color: {{ section.settings.nav_link_color }}">
+                {{ link.title }}
+              </div>
+            </a>
+            {% elsif section.settings.link-alignment == "right" %}
+            <a href="{{ link.url }}" class="link-block w-inline-block">
+              <div class="nav-link right" style = "--navlink-hover-color: {{ section.settings.navlink_hover_color }}; --navlink-background-color: {{ section.settings.navlink_background_color }}; color: {{ section.settings.nav_link_color }}">
+                {{ link.title }}
+              </div>
+            </a>
+            {% endif %}
+          {%- endfor -%}
+          {%- render 'menu-error', menu: "main-menu" -%}
+</div>
+
+        
+{% schema %}
+{
+  "name": "Main Menu Links",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "color",
+      "id": "nav_link_color",
+      "label": "Navigation Link Colors",
+      "default": "#FFF"
+    },
+    {
+      "type": "color",
+      "id": "navlink_hover_color",
+      "label": "Link Hover Colors",
+      "default": "#FFF"
+    },
+    {
+      "type": "color",
+      "id": "navlink_background_color",
+      "label": "Link Background Hover Colors",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "link-alignment",
+      "label": "Nav Link Alignment",
+      "options": [
+      {
+        "value": "left",
+        "label": "Left (Supreme-style)"
+      },
+      {
+        "value": "center",
+        "label": "Center"
+      }
+    ],
+  "default": "left"
+    }
+  ]
+}
+{% endschema %}

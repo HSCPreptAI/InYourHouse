@@ -1,0 +1,51 @@
+
+{% if settings.show_music %}
+<div  class="music-container" data-file-url="{{ settings.music_url }}" music-image-url="{{ settings.music_img | img_url: 'master' }}">
+        <div id="title" class="music-info">
+            <h4>Rideaux</h4>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <audio preload="auto" loop autoplay preload="metadata" id="audio"></audio>
+
+  {% if settings.show_disk %}
+        <div class="img-container">
+            <img alt="music-cover" id="cover">
+        </div>
+  {% endif %}
+
+  {% assign mobile-play-alignment = "" %}
+  {% if settings.show_disk == false %}
+  {% assign mobile-play-alignment = "play-alignment" %}
+  {% endif %}
+  
+
+        <div class="navigation {{ mobile-play-alignment }}">
+<!--             <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button> -->
+            <button id="play" style="color: {{ settings.music_btn_color }}" class=" action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+<!--             <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button> -->
+        </div>
+    </div>
+  </div>
+  {% endif %}
+
+{% schema %}
+{
+  "name": "Music Player",
+  "tag": "div",
+  "settings": [
+     {
+      "type": "paragraph",
+      "content": "Go to 'Theme Settings' to change music and more"
+    }
+  ]
+}
+{% endschema %}

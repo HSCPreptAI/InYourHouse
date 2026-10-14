@@ -1,0 +1,29 @@
+
+      {%- if section.settings.show_credits -%}
+        <a href="https://openspaces.design"><div class="credits" style="color: {{ section.settings.credit_text_color }};">Theme by OPENSPACES</div></a>
+      {%- endif -%}
+    
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","credits");</script>
+        
+{% schema %} 
+{
+  "name": "Credits",
+  "tag": "div",
+  "class": "credits",
+  "settings": [
+    {
+      "type": "color",
+      "id": "credit_text_color",
+      "label": "Credit Text Color",
+      "default": "#FFF"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_credits",
+      "label": "Show Credits",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,72 @@
+/*
+  IN YOUR HOUSE — brand layer for the Supreme theme.
+  Loaded after the theme CSS. Type system carried over from the current site:
+  Tier 1 Neue Haas Display Medium (headings, nav, buttons, prices)
+  Tier 2 Neue Haas Grotesk Text Roman (reading text)
+  Tier 3 VCR OSD Mono (labels: clock, issue numbers, credits)
+*/
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("{{ 'NeueHaasDisplay-Mediu.woff2' | asset_url }}") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Text";
+  src: url("{{ 'NHaasGroteskTXPro-55Rg.otf' | asset_url }}") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "VCR OSD Mono";
+  src: url("{{ 'VCR_OSD_MONO_1.001.ttf' | asset_url }}") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --iyh-ink: #181818;
+  --iyh-logo-ink: #2f2b2c;
+  --iyh-paper: #ffffff;
+  --iyh-concrete: #e8e8e8;
+  --iyh-body-font: "Neue Haas Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --iyh-heading-font: "Neue Haas Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --iyh-editorial-font: "VCR OSD Mono", ui-monospace, monospace;
+}
+
+/* Tier 2: reading text */
+body, p, .paragraph, .rich-text-block, .w-richtext, .contact-content,
+input, textarea, select, .product-description, .text-block-9, .text-block-18 {
+  font-family: var(--iyh-body-font);
+  font-weight: 400;
+}
+
+/* Tier 1: headings and shopping controls */
+h1, h2, h3, h4, h5, h6,
+.product-title, .prouduct-title, .nav-link, .menu-link, .btn, .w-button,
+.add_btn_font, .add_header_font, .checkout-button-2, .text-block-16,
+.w-commerce-commercecartheading, .w-commerce-commercecheckoutplaceorderbutton,
+.w-commerce-commerceaddtocartbutton, input[type="submit"] {
+  font-family: var(--iyh-heading-font);
+  font-weight: 500;
+  font-synthesis: none;
+}
+h1, h2, h3, h4, h5, h6 { letter-spacing: -0.015em; }
+
+/* Tier 3: labels */
+.date, .time, .credits, .announcement-bar, .iyh-label {
+  font-family: var(--iyh-editorial-font);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Logo sizing: wordmark on desktop, compact on mobile */
+.logo { width: var(--iyh-logo-w, 165px); height: auto; max-width: 100%; }
+@media (max-width: 479px) {
+  .logo { width: var(--iyh-logo-w-mobile, var(--iyh-logo-w, 140px)); max-width: 70vw; }
+}
+
+::selection { background: var(--iyh-ink); color: var(--iyh-paper); }

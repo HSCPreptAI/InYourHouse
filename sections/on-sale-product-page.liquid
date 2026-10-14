@@ -1,0 +1,25 @@
+<div bind="3798fba7-e3e1-842b-f83e-2166dadca04a" class="on-sale-product-page" style="display: flex; background-color: {{ section.settings.on_sale_bg_color }}">
+  <div style="color: {{ section.settings.on_sale_text_color }};">ON SALE</div>
+</div>
+
+
+{% schema %}
+{
+  "name": "On Sale Label",
+  "tag": "div",
+  "settings": [
+   {
+      "type": "color",
+      "id": "on_sale_bg_color",
+      "label": "On Sale Background Color",
+      "default": "#000000"
+    },
+     {
+      "type": "color",
+      "id": "on_sale_text_color",
+      "label": "On Sale Text Color",
+      "default": "#FFF"
+    }
+  ]
+}
+{% endschema %}
