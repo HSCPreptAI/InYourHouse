@@ -1,9 +1,8 @@
 /*
   IN YOUR HOUSE — brand layer for the Supreme theme.
   Loaded after the theme CSS. Type system carried over from the current site:
-  Tier 1 Neue Haas Display Medium (headings, nav, buttons, prices)
-  Tier 2 Neue Haas Grotesk Text Roman (reading text)
-  Tier 3 VCR OSD Mono (labels: clock, issue numbers, credits)
+  Neue Haas Display Medium: headings, nav, buttons, prices
+  Neue Haas Grotesk Text Roman: reading text, plus small caps labels
 */
 @font-face {
   font-family: "Neue Haas Display";
@@ -19,13 +18,6 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: "VCR OSD Mono";
-  src: url("{{ 'VCR_OSD_MONO_1.001.ttf' | asset_url }}") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
 :root {
   --iyh-ink: #181818;
@@ -35,17 +27,16 @@
   --iyh-cream: #f8f3eb;
   --iyh-body-font: "Neue Haas Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --iyh-heading-font: "Neue Haas Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --iyh-editorial-font: "VCR OSD Mono", ui-monospace, monospace;
 }
 
-/* Tier 2: reading text */
+/* Reading text */
 body, p, .paragraph, .rich-text-block, .w-richtext, .contact-content,
 input, textarea, select, .product-description, .text-block-9, .text-block-18 {
   font-family: var(--iyh-body-font);
   font-weight: 400;
 }
 
-/* Tier 1: headings and shopping controls */
+/* Headings and shopping controls */
 h1, h2, h3, h4, h5, h6,
 .product-title, .prouduct-title, .nav-link, .menu-link, .btn, .w-button,
 .add_btn_font, .add_header_font, .checkout-button-2, .text-block-16,
@@ -57,11 +48,13 @@ h1, h2, h3, h4, h5, h6,
 }
 h1, h2, h3, h4, h5, h6 { letter-spacing: -0.015em; }
 
-/* Tier 3: labels */
+/* Labels: clock, credits, announcement bar */
 .date, .time, .credits, .announcement-bar, .iyh-label {
-  font-family: var(--iyh-editorial-font);
+  font-family: var(--iyh-body-font);
   font-weight: 400;
-  letter-spacing: 0.02em;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Logo sizing: IYH monogram on desktop, wordmark on mobile */

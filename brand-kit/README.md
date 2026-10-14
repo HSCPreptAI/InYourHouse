@@ -10,6 +10,6 @@ Shopify only syncs the theme folders (`assets`, `config`, `layout`, `locales`, `
 | `icons/` | 512px app icons, 180px web clip, 64px favicon |
 | `social/` | 1200×630 link preview, 1080px Instagram avatar and wordmark post |
 
-Fonts live in the theme's `assets/` folder: `NeueHaasDisplay-Mediu.woff2`, `NHaasGroteskTXPro-55Rg.otf`, `VCR_OSD_MONO_1.001.ttf`. They're licensed fonts, so check the licence before using them anywhere new.
+Fonts live in the theme's `assets/` folder: `NeueHaasDisplay-Mediu.woff2` and `NHaasGroteskTXPro-55Rg.otf`. They're licensed fonts, so check the licence before using them anywhere new.
 
 Source logos: the IYH monogram supplied in chat, and `"!" LOGO SAMPLES/logo png` in the INYOURHOUSE Drive folder for the wordmark.
